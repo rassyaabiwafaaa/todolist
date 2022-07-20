@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #3c87ff;
+  overflow: hidden;
+}
+
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 405px;
+  margin: 135px auto;
+  padding: 28px 0;
+  background: #fff;
+  border-radius: 7px;
+}
+.wrapper .task-input {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+}
+.wrapper .task-input img {
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
+}
+.wrapper .task-input input {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px 0 53px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  outline: none;
+}
+.wrapper .task-input input::placeholder {
+  color: #bfbfbf;
+}
+.wrapper .controls {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper .controls .filters span {
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 17px;
+}
+.wrapper .controls .filters span:first-child {
+  margin-left: 0;
+}
+.wrapper .controls .filters .active {
+  color: #3c87ff;
+}
+.wrapper .controls .clear-btn {
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #3c87ff;
+  padding: 7px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.task-box {
+  margin: 20px 25px;
+}
+.task-box .task {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+}
+.task-box .task .task:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.task-box .task label {
+  display: flex;
+}
+.task-box .task label input {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+.task-box .task label .checked {
+  text-decoration: line-through;
+}
+.task-box .task .settings {
+  cursor: pointer;
+  position: relative;
+}
+.task-box .task .settings .task-menu {
+  position: absolute;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  z-index: 2;
+  right: -5px;
+  bottom: -65px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+}
+.task-box .task .settings .task-menu li {
+  height: 25px;
+  font-size: 16px;
+  margin-bottom: 2px;
+  justify-content: flex-start;
+  padding: 17px 15px;
+}
+.task-box .task .settings .task-menu li i {
+  padding-right: 8px;
+}
+.task-box .task .settings .task-menu li:hover {
+  background: #f5f5f5;
+}
+.task-box .task .settings .task-menu li:last-child {
+  margin-bottom: 0;
+}
+.task-box .task .settings .show {
+  transform: scale(1);
+}/*# sourceMappingURL=main.css.map */
